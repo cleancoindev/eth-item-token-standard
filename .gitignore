@@ -1,0 +1,7 @@
+/**/package-lock.json
+/**/node_modules
+/**/.vscode
+/**/out
+/**/truffle-config.js
+/**/artifacts/
+/**/bin/
