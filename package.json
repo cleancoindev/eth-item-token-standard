@@ -1,0 +1,18 @@
+{
+  "name": "eth-item-token-standard",
+  "version": "1.0.0",
+  "description": "An improved ERC1155 token with ERC20 trading capabilities",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-u-i-d-l/eth-item-token-standard.git"
+  },
+  "author": "The DFOhub Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b-u-i-d-l/eth-item-token-standard/issues"
+  },
+  "homepage": "https://github.com/b-u-i-d-l/eth-item-token-standard#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.1.0"
+  }
+}
