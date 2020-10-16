@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>IEthItem - arte-1155</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "IEthItem";
+    var mkdocs_page_input_path = "IEthItem.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> arte-1155</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">API</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Contracts</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">IEthItem</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#methods">Methods</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#initaddressstringstring">init(address,string,string)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mintuint256string">mint(uint256,string)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#burnuint256uint256">burn(uint256,uint256)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#burnbatchuint256uint256">burnBatch(uint256[],uint256[])</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#erc20nftwrappermodel">erc20NFTWrapperModel()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#aserc20uint256">asERC20(uint256)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IERC1155Views/">IERC1155Views</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IERC20NFTWrapper/">IERC20NFTWrapper</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">arte-1155</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Contracts &raquo;</li>
+        
+      
+        
+          <li>API &raquo;</li>
+        
+      
+    
+    <li>IEthItem</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="contract-iethitem">Contract IEthItem</h1>
+<ul>
+<li><strong>Path:</strong> IEthItem.sol</li>
+<li><strong>Version:</strong> 1</li>
+<li><strong>Title:</strong> EthItem Interface - An improved ERC1155 token with ERC20 trading capabilities</li>
+</ul>
+<hr />
+<ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#initaddressstringstring">init(address,string,string)</a><ul>
+<li><a href="#params">Params</a></li>
+</ul>
+</li>
+<li><a href="#mintuint256string">mint(uint256,string)</a><ul>
+<li><a href="#params-1">Params</a></li>
+</ul>
+</li>
+<li><a href="#burnuint256uint256">burn(uint256,uint256)</a><ul>
+<li><a href="#params-2">Params</a></li>
+</ul>
+</li>
+<li><a href="#burnbatchuint256uint256">burnBatch(uint256[],uint256[])</a><ul>
+<li><a href="#params-3">Params</a></li>
+</ul>
+</li>
+<li><a href="#erc20nftwrappermodel">erc20NFTWrapperModel()</a></li>
+<li><a href="#aserc20uint256">asERC20(uint256)</a><ul>
+<li><a href="#params-4">Params</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>In the EthItem standard, there is no a centralized storage where to save every objectId info.
+In fact every NFT data is saved in a specific ERC20 token that can also work as a standalone one, and let transfer parts of an atomic object.
+The ERC20 represents a unique Token Id, and its supply represents the entire supply of that Token Id.
+You can instantiate a EthItem as a brand-new one, or as a wrapper for pre-existent classic ERC1155 NFT.
+In the first case, you can introduce some particular permissions to mint new tokens.
+In the second case, you need to send your NFTs to the Wrapped EthItem (using the classic safeTransferFrom or safeBatchTransferFrom methods) and it will create a brand new ERC20 Token or mint new supply (in the case some tokens with the same id were transferred before yours).</p>
+<h2 id="methods">Methods</h2>
+<h3 id="initaddressstringstring">init(address,string,string)</h3>
+<p>Constructor When you create a EthItem, you can specify if you want to create a brand new one, passing the classic data like name, symbol, amd URI, or wrap a pre-existent ERC1155 NFT, passing its contract address. You can use just one of the two modes at the same time. In both cases, a ERC20 token address is mandatory. It will be used as a model to be cloned for every minted NFT.</p>
+<h4 id="params">Params</h4>
+<ul>
+<li><code>erc20NFTWrapperModel</code>: the address of the ERC20 pre-deployed model. It will not be used in the procedure, but just cloned as a brand-new one every time a new NFT is minted.</li>
+<li><code>name</code>: the name of the brand new EthItem to be created. If you are wrapping a pre-existing ERC1155 NFT, this must be blank.</li>
+<li><code>symbol</code>: the symbol of the brand new EthItem to be created. If you are wrapping a pre-existing ERC1155 NFT, this must be blank.</li>
+</ul>
+<h3 id="mintuint256string">mint(uint256,string)</h3>
+<p>Mint If the EthItem does not wrap a pre-existent NFT, this call is used to mint new NFTs, according to the permission rules provided by the Token creator.</p>
+<h4 id="params_1">Params</h4>
+<ul>
+<li><code>amount</code>: The amount of tokens to be created. It must be greater than 1 unity.</li>
+<li><code>partialUri</code>: The Uri to locate this new token's metadata.</li>
+</ul>
+<h3 id="burnuint256uint256">burn(uint256,uint256)</h3>
+<p>Burn You can choose to burn your NFTs. In case this Token wraps a pre-existent ERC1155 NFT, you will receive the wrapped NFTs.</p>
+<h4 id="params_2">Params</h4>
+<ul>
+<li><code>amount</code>: Amount of the object to burn to burn</li>
+<li><code>objectId</code>: Id of the object to burn</li>
+</ul>
+<h3 id="burnbatchuint256uint256">burnBatch(uint256[],uint256[])</h3>
+<p>Burn Batch Same as burn, but for multiple NFTs at the same time</p>
+<h4 id="params_3">Params</h4>
+<ul>
+<li><code>amounts</code>: Array of amounts of the objects to burn</li>
+<li><code>objectIds</code>: Array of ids of the objects to burn</li>
+</ul>
+<h3 id="erc20nftwrappermodel">erc20NFTWrapperModel()</h3>
+<p>GET the <code>erc20NFTWrapperModel</code></p>
+<h3 id="aserc20uint256">asERC20(uint256)</h3>
+<p>GET the IERC20NFTWrapper of the corresponding objectId</p>
+<h4 id="params_4">Params</h4>
+<ul>
+<li><code>objectId</code>: objectId of which to get an ERC20 representation</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../IERC1155Views/" class="btn btn-neutral float-right" title="IERC1155Views">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../IERC1155Views/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+site_name: arte-1155
+docs_dir: md-build
+site_dir: gh-pages
+permalink: True
+nav:
+  - Home: README.md
+  - API:
+      - Contracts:
+          - IEthItem: IEthItem.md
+          - IERC1155Views: IERC1155Views.md
+          - IERC20NFTWrapper: IERC20NFTWrapper.md
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - typescript
+    - javascript

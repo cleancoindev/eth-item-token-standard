@@ -6,6 +6,17 @@
     "type": "git",
     "url": "git+https://github.com/b-u-i-d-l/eth-item-token-standard.git"
   },
+  "main": "build.js",
+  "scripts": {
+    "build": "node build",
+    "docs": "yarn docs:docgen && yarn docs:mkdocs:serve",
+    "docs:build": "yarn docs:docgen && yarn docs:mkdocs:build",
+    "docs:clean": "rm -r docs/{md-build,gh-pages}",
+    "docs:serve": "yarn docs:docgen && yarn docs:mkdocs:serve",
+    "docs:docgen": "py-solidity-docgen --input out --output docs/md-build && cp *.md docs/md-build",
+    "docs:mkdocs:build": "cd docs && mkdocs build",
+    "docs:mkdocs:serve": "yarn docs:docgen && cd docs && mkdocs serve"
+  },
   "author": "The DFOhub Team",
   "license": "ISC",
   "bugs": {
@@ -13,6 +24,7 @@
   },
   "homepage": "https://github.com/b-u-i-d-l/eth-item-token-standard#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "^3.1.0"
+    "@openzeppelin/contracts": "^3.1.0",
+    "truffle-flattener-wrapper": "git+https://github.com/b-u-i-d-l/truffle-flattener-wrapper.git"
   }
 }
